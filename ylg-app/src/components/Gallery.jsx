@@ -3,14 +3,14 @@ import '../stylesheets/Gallery.css';
 
 function Gallery() {
     const imageUrls = [
-        '/images/Landscape1.jpg',
-        '/images/Landscape2.jpg',
-        '/images/Landscape3.jpg',
-        '/images/Landscape4.jpg',
-        '/images/Landscape5.jpg',
-        '/images/Landscape6.jpg',
-        '/images/Landscape7.jpg',
-        '/images/Landscape8.jpg'
+        '/pics/Landscape1.jpg',
+        '/pics/Landscape2.jpg',
+        '/pics/Landscape3.jpg',
+        '/pics/Landscape4.jpg',
+        '/pics/Landscape5.jpg',
+        '/pics/Landscape6.jpg',
+        '/pics/Landscape7.jpg',
+        '/pics/Landscape8.jpg'
     ];
     
     return (
