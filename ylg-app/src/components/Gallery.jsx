@@ -25,7 +25,7 @@ function Gallery() {
     <section className="gallery">
       <h3>This Could Be Your Lawn</h3>
       <div className="galleryContainer">
-        {images.map((url, index) => (
+        {images.map((src, index) => (
           <img key={index} src={src} alt={`Landscape ${index + 1}`} />
         ))}
       </div>
