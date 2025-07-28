@@ -78,3 +78,15 @@ form button {
 form button:hover {
   background-color: #4c734c;
 }
+
+.confirmation {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

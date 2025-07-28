@@ -1,10 +1,17 @@
-import React from 'react';
-import '../stylesheets/Form.css';
+import React, { useState } from "react";
+import "../stylesheets/Form.css";
 
 function Form() {
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setSubmitted(true);
+  }
+
   return (
     <div className="form">
-      <form action="/" method="get">
+      <form onSubmit={handleSubmit}>
         <fieldset>
           <legend>Request A Quote:</legend>
           <label htmlFor="fullName">Full Name:</label>
@@ -61,6 +68,10 @@ function Form() {
           <button type="submit">Submit</button>
         </fieldset>
       </form>
+
+      {submitted && (
+        <p className="confirmation">Thank you for your submission!</p>
+      )}
     </div>
   );
 }
