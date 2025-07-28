@@ -1,5 +1,5 @@
 import React from 'react';
-//import '../stylesheets/Gallery.css';
+import '../stylesheets/Gallery.css';
 
 function Gallery() {
     const imageUrls = [
@@ -16,7 +16,7 @@ function Gallery() {
     return (
         <section className="gallery">
             <h3>This Could Be Your Lawn</h3>
-            <div className="galleryGrid">
+            <div className="galleryContainer">
                 {imageUrls.map((url, index) => (
                     <img key={index} src={url} alt={`Landscape ${index + 1}`} />
                 ))}

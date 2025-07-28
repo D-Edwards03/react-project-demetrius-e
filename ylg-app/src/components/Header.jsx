@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MyButton from "./MyButton";
-//import "../stylesheets/Header.css";
+import "../stylesheets/Header.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +24,6 @@ function Header() {
           </li>
           <li>
             <MyButton label="About" onClick={() => navigate("/about")} />
-          </li>
-          <li>
-            <MyButton label="Reviews" onClick={() => navigate("/reviews")} />
           </li>
           <li>
             <MyButton label="Contact" onClick={() => navigate("/contact")} />

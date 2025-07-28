@@ -1,0 +1,39 @@
+.contact {
+  background-color: #f5fff5;
+  min-height: calc(100vh - 165px); /* adjust based on estimated header + footer height */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #1a3b1a;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.85;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact-info p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.contact strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #2f5d2f;
+}
+
+.contact p:last-of-type {
+  margin-top: 30px;
+  font-style: italic;
+  color: #4c734c;
+}

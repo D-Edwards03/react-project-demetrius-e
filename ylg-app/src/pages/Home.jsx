@@ -2,7 +2,7 @@ import React from "react";
 import Gallery from "../components/Gallery";
 import Form from "../components/Form";
 import Reviews from "../components/Reviews";
-//import "../stylesheets/Home.css";
+import "../stylesheets/Home.css";
 
 function Home() {
   return (

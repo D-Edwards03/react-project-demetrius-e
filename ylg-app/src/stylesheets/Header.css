@@ -1,0 +1,94 @@
+header {
+  background-color: #1a4e1a;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 4px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.burgerMenu span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navlinks li {
+  display: flex;
+}
+
+.myButton {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.myButton:hover {
+  background-color: white;
+  color: #1a3b1a;
+}
+
+@media screen and (max-width: 768px) {
+  .burgerMenu {
+    display: flex;
+  }
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adjust based on header height */
+    right: 20px;
+    background-color: #1a3b1a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .navlinks li {
+    margin: 10px 0;
+  }
+}

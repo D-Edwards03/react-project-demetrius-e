@@ -1,0 +1,45 @@
+.review {
+  background-color: #f5fff5;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: #1a3b1a;
+  max-width: 500px;
+  width: 100%;
+}
+
+.review h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #cce5cc;
+  padding-bottom: 10px;
+}
+
+.reviewGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviewCard {
+  background-color: #f5fff5;
+  padding: 20px;
+  border-left: 4px solid #4c734c;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.reviewCard h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2f5d2f;
+}
+
+.reviewCard p {
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0;
+}

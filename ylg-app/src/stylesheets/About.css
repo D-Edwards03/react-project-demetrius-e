@@ -1,0 +1,30 @@
+.about {
+  background-color: #f5fff5;
+  padding: 60px 30px;
+  height: 100%;
+  min-height: calc(100vh - 208px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #1a3b1a;
+  opacity: 0.85;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #cce5cc;
+  padding-bottom: 10px;
+}
+
+.about p {
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2f5d2f;
+}
