@@ -12,6 +12,7 @@ function Gallery() {
         '/images/Landscape7.jpg',
         '/images/Landscape8.jpg'
     ];
+    
     return (
         <section className="gallery">
             <h3>This Could Be Your Lawn</h3>

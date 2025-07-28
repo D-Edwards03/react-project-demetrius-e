@@ -7,7 +7,6 @@ function Form() {
       <form action="/" method="get">
         <fieldset>
           <legend>Request A Quote:</legend>
-
           <label htmlFor="fullName">Full Name:</label>
           <input
             type="text"
@@ -18,6 +17,15 @@ function Form() {
             minLength="2"
           />
 
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+
           <label htmlFor="phoneNum">Phone Number:</label>
           <input
             type="tel"
@@ -26,15 +34,6 @@ function Form() {
             placeholder="xxx-xxx-xxxx"
             required
             minLength="10"
-          />
-
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="email@example.com"
-            required
           />
 
           <legend>Property Type:</legend>
