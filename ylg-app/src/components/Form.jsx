@@ -7,6 +7,7 @@ function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     setSubmitted(true);
+    event.target.reset();
   }
 
   return (
