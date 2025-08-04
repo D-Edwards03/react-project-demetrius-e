@@ -55,6 +55,7 @@
   width: 100%;
 }
 
+/* Add extra margin to the last review card */
 .reviewCard:last-of-type {
   margin-bottom: 40px;
 }

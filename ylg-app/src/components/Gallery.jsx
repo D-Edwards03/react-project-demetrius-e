@@ -25,7 +25,9 @@ function Gallery() {
     <section className="gallery">
       <h3>This Could Be Your Lawn</h3>
       <div className="galleryContainer">
+        {/* Loop through the images array to display each image */}
         {images.map((src, index) => (
+          //Use index as key and provide alt text for accessibility
           <img key={index} src={src} alt={`Landscape ${index + 1}`} />
         ))}
       </div>

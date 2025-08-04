@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../stylesheets/Reviews.css";
 
 function Reviews() {
+  //Static testimonials data
   const testimonials = [
     {
       name: "Jim",
@@ -23,32 +24,41 @@ function Reviews() {
     },
   ];
 
+  //State to manage dynamic reviews
   const [reviews, setReviews] = useState([]);
+  //State to manage form inputs and editing
   const [formData, setFormData] = useState({ name: "", comment: "" });
   const [editIndex, setEditIndex] = useState(null);
 
+  //
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+  //Function to handle form submission for adding/editing reviews
   const handleSubmit = (event) => {
     event.preventDefault();
     if (editIndex !== null) {
+      //If editing, update the specific review
       const updated = [...reviews];
       updated[editIndex] = formData;
       setReviews(updated);
       setEditIndex(null);
     } else {
+      //If adding new, append to reviews array
       setReviews([...reviews, formData]);
     }
+    //Reset form data after submission
     setFormData({ name: "", comment: "" });
   };
 
+  //Load existing review data into form for editing
   const handleEdit = (index) => {
     setFormData(reviews[index]); 
     setEditIndex(index);
   };
 
+//Remove review from the array
 const handleDelete = (index) => {
   setReviews(reviews.filter((_, i) => i !== index));
 };

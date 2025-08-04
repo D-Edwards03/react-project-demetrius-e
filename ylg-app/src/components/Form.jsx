@@ -1,18 +1,21 @@
+//Import React and useState hook for managing form submission state
 import React, { useState } from "react";
 import "../stylesheets/Form.css";
 
 function Form() {
+  //State to manage form submission status
   const [submitted, setSubmitted] = useState(false);
 
+  //Function to handle form submission
   function handleSubmit(event) {
-    event.preventDefault();
-    setSubmitted(true);
-    event.target.reset();
+    event.preventDefault(); //Prevent page from reloading
+    setSubmitted(true); //Update state to show confirmation message
+    event.target.reset(); //Reset the form fields after submission
   }
 
   return (
     <div className="form">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}> {/* Runs handleSubmit when submitted */}
         <fieldset>
           <legend>Request A Quote:</legend>
           <label htmlFor="fullName">Full Name:</label>
@@ -21,8 +24,8 @@ function Form() {
             id="fullName"
             name="fullName"
             placeholder="Enter your full name"
-            required
-            minLength="2"
+            required //Ensures the field is filled out
+            minLength="2" //Minimum length for the name
           />
 
           <label htmlFor="email">Email:</label>
@@ -51,7 +54,7 @@ function Form() {
                 type="radio"
                 name="propertyType"
                 value="residential"
-                required
+                required //Ensures one option is selected
               />
               Residential
             </label>
@@ -70,6 +73,7 @@ function Form() {
         </fieldset>
       </form>
 
+      {/* Confirmation message displayed after form submission */}
       {submitted && (
         <p className="confirmation">Thank you for your submission!</p>
       )}

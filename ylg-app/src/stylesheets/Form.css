@@ -86,6 +86,7 @@ form button:hover {
   animation: fadeIn 0.6s ease-in forwards;
 }
 
+/* Animation for confirmation message */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
